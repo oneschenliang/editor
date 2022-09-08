@@ -15,6 +15,9 @@ module.exports = {
       template: "editor/index.html",
     }),
   ],
+  resolve: {
+    extensions: [".ts", ".tsx", ".js"]
+  },
   module: {
     rules: [
       {
@@ -38,7 +41,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               modules: false,
-              namedExport: false,
+              // namedExport: false,
             },
           },
         ],
